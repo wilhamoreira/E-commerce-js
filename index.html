@@ -18,6 +18,7 @@
     <section id="produtos-carrinho" class="h-3/5 overflow-y-auto flex flex-col gap-2">
       
     </section>
+    <p id="preco-total" class="bg-slate-200 text-green-700 rounded-sm pl-5">Total: $ 0</p>
 
     
     <button class="bg-slate-200 text-slate-900 p-1">Finalizar compra</button>
@@ -32,6 +33,28 @@
     </div>
   </header>
   <main>
+    <main class="flex flex-col items-center">
+      <section id="filtros" class="p-10 flex">
+        <div class="px-2">
+          <input id="exibir-todos" type="radio" name="filtro" id="" class="peer hidden" checked>
+          <label for="exibir-todos" class="peer-checked:bg-slate-950 peer-checked:text-slate-200 peer-checked:font-bold p-2 rounded-xl select-none">Todos</label>
+        </div>
+
+        <div class="px-2">
+          <input id="exibir-masculinos" type="radio" name="filtro" id="" class="peer hidden">
+          <label for="exibir-masculinos" class="peer-checked:bg-slate-950 peer-checked:text-slate-200 peer-checked:font-bold p-2 rounded-xl select-none">Masculinos</label>
+        </div>
+
+        <div class="px-2">
+          <input id="exibir-femininos" type="radio" name="filtro" id="" class="peer hidden">
+          <label for="exibir-femininos" class="peer-checked:bg-slate-950 peer-checked:text-slate-200 peer-checked:font-bold p-2 rounded-xl select-none">Femininos</label>          
+        </div>
+  
+  
+
+      </section>
+
+    </main>
   <!-- Cards de produtos -->
     <section id="container-produto" class="flex flex-wrap p-10 justify-center gap-10">
       
